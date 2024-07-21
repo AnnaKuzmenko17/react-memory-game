@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, minmax(100px, 120px));
+  grid-template-rows: repeat(3, minmax(100px, 120px));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.5s;
+}
+
+.grid div {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  border: 0;
+  transition: all ease 0.5s;
+}
