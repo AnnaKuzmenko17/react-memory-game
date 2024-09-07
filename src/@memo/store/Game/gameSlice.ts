@@ -15,10 +15,6 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
   startGame: (level) =>
     set(() => ({
       board: selectCards(level),
-      selectedCards: [],
-      isGameOver: false,
-      isGameStarted: true,
-      movements: 0,
     })),
   flipCard: (id) => {
     const {board, isGameStarted, selectedCards} = get();
@@ -40,4 +36,12 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
     const newBoard = checkMatch(board, selectedCards);
     set({board: newBoard, selectedCards: []});
   },
+  resetGame: () =>
+    set({
+      board: selectCards(9),
+      selectedCards: [],
+      isGameOver: false,
+      isGameStarted: true,
+      movements: 0,
+    }),
 });
