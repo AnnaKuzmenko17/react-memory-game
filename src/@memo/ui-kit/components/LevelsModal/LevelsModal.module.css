@@ -1,0 +1,19 @@
+.levels {
+  position: absolute;
+  width: 166px;
+  height: 200px;
+  top: 80px;
+  right: 200px;
+  border-radius: 30px;
+  z-index: 3;
+  padding: 10px;
+  background-color: var(--basic);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (width < 767.98px) {
+    top: calc(50% - 50px);
+    right: calc(50% - 83px);
+  }
+}

@@ -1,0 +1,12 @@
+.logo {
+  padding: 15px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0em;
+  color: var(--dark-pink);
+}
+
+.logo_dark {
+  color: var(--red);
+}

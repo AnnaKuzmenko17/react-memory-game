@@ -1,0 +1,13 @@
+:root {
+  --red: #c40909;
+  --dark: #333333;
+  --dark-pink: #f18b8b;
+  --light-pink: #e4cbcb;
+  --white: #ffffff;
+  --grey: #75728d;
+  --light-grey: #aeadbd;
+  --light: #eef2f1;
+  --basic: #f1f1f1;
+  --check: #f18b8b;
+  --modal-overlay: rgb(174, 173, 189, 0.5);
+}

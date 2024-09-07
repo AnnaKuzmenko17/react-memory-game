@@ -1,0 +1,21 @@
+.indicator {
+  border: 0;
+  border-radius: 30px;
+  width: 133px;
+  padding: 4px 24px;
+  background-color: var(--light-pink);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--grey);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.indicator_dark {
+  color: var(--red);
+  background-color: var(--basic);
+  border: 1px solid var(--red);
+}
