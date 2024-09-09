@@ -25,7 +25,7 @@ export const CardItem: FC<Props> = ({name, imgUrl, status, onFlip}) => {
     >
       {status !== CardStatus.INITIAL && (
         <Image
-          url={imgUrl}
+          url={`${import.meta.env.BASE_URL}${imgUrl}`}
           alt={name}
         />
       )}
