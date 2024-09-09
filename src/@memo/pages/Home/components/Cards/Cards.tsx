@@ -1,6 +1,6 @@
 import {Theme} from '@memo/store/Theme/types';
+import {CardItem} from '@memo/ui-kit/components/CardItem/CardItem';
 
-import {CardItem} from '../../../../ui-kit/components/CardItem/CardItem';
 import styles from './Cards.module.css';
 import {useCards} from './useCards';
 
