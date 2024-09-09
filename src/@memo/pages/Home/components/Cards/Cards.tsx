@@ -8,21 +8,19 @@ export const Cards = () => {
   const {board, flipCard, theme} = useCards();
 
   return (
-    <>
-      <div className={styles.grid}>
-        {board.map((item, i) => {
-          const id = `${item.id}-${i}`;
-          return (
-            <CardItem
-              key={id}
-              name={item.name}
-              imgUrl={theme === Theme.DARK ? item.dark : item.img}
-              status={item.status}
-              onFlip={() => flipCard(id)}
-            />
-          );
-        })}
-      </div>
-    </>
+    <div className={styles.grid}>
+      {board.map((item, i) => {
+        const id = `${item.id}-${i}`;
+        return (
+          <CardItem
+            key={id}
+            name={item.name}
+            imgUrl={theme === Theme.DARK ? item.dark : item.img}
+            status={item.status}
+            onFlip={() => flipCard(id)}
+          />
+        );
+      })}
+    </div>
   );
 };

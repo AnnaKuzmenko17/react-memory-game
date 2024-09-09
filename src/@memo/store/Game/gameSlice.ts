@@ -4,14 +4,11 @@ import {selectCards} from '@memo/services/helpers/selectCards';
 import {CardStatus} from '@memo/types/types';
 import {StateCreator} from 'zustand';
 
+import {INITIAL_GAME_STATE} from './constants';
 import {GameState} from './types';
 
 export const createGameSlice: StateCreator<GameState> = (set, get) => ({
-  board: selectCards(9),
-  selectedCards: [],
-  movements: 0,
-  isGameOver: false,
-  isGameStarted: false,
+  ...INITIAL_GAME_STATE,
   startGame: (level) =>
     set(() => ({
       board: selectCards(level),
@@ -38,10 +35,6 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
   },
   resetGame: () =>
     set({
-      board: selectCards(9),
-      selectedCards: [],
-      isGameOver: false,
-      isGameStarted: true,
-      movements: 0,
+      ...INITIAL_GAME_STATE,
     }),
 });
