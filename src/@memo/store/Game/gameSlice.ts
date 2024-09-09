@@ -12,6 +12,7 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
   startGame: (level) =>
     set(() => ({
       board: selectCards(level),
+      isGameStarted: true,
     })),
   flipCard: (id) => {
     const {board, isGameStarted, selectedCards} = get();
