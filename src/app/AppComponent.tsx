@@ -12,11 +12,11 @@ export const AppComponent = () => {
       <main>
         <Routes>
           <Route
-            path="/react-memory-game/"
+            path="/"
             element={<HomePage />}
           />
           <Route
-            path="/react-memory-game/ui-kit"
+            path="/ui-kit"
             element={<UiKit />}
           />
         </Routes>
