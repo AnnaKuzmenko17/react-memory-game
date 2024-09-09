@@ -1,5 +1,6 @@
 .grid {
   display: grid;
+  justify-content: center;
   width: 100%;
   grid-template-columns: repeat(6, minmax(100px, 120px));
   grid-template-rows: repeat(3, minmax(100px, 120px));

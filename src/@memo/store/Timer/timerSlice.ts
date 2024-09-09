@@ -13,6 +13,9 @@ export const createTimerSlice: StateCreator<TimerState> = (set, get) => ({
     }, 1000);
     set({intervalId: interval});
   },
+  stopTimer: () => {
+    clearInterval(get().intervalId);
+  },
   resetTimer: () => {
     clearInterval(get().intervalId);
     set({time: 0});

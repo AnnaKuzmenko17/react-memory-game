@@ -1,4 +1,5 @@
 import {checkMatch} from '@memo/services/helpers/checkMatch';
+import {checkWin} from '@memo/services/helpers/checkWin';
 import {handleFlip} from '@memo/services/helpers/handleFlip';
 import {selectCards} from '@memo/services/helpers/selectCards';
 import {CardStatus} from '@memo/types/types';
@@ -15,7 +16,7 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
       isGameStarted: true,
     })),
   flipCard: (id) => {
-    const {board, isGameStarted, selectedCards} = get();
+    const {board, isGameStarted, selectedCards, checkMatch, checkWin} = get();
     if (!isGameStarted || selectedCards.length === 2) return;
     const newBoard = handleFlip(board, id);
     const newSelectedCards = newBoard.filter((card) => card.status === CardStatus.FLIPPED);
@@ -26,13 +27,20 @@ export const createGameSlice: StateCreator<GameState> = (set, get) => ({
       isGameStarted: true,
     }));
     if (newSelectedCards.length === 2) {
-      setTimeout(() => get().checkMatch(), 1000);
+      setTimeout(() => {
+        checkMatch();
+        checkWin();
+      }, 1000);
     }
   },
   checkMatch: () => {
     const {board, selectedCards} = get();
     const newBoard = checkMatch(board, selectedCards);
     set({board: newBoard, selectedCards: []});
+  },
+  checkWin: () => {
+    const {board} = get();
+    set({isGameOver: checkWin(board)});
   },
   resetGame: () =>
     set({

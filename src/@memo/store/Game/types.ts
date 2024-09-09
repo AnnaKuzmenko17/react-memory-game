@@ -9,5 +9,6 @@ export interface GameState {
   startGame: (level: number) => void;
   flipCard: (id: string) => void;
   checkMatch: () => void;
+  checkWin: () => void;
   resetGame: () => void;
 }

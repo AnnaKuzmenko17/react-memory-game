@@ -24,6 +24,10 @@ button {
   font-family: inherit;
 }
 
+button:focus {
+  outline: none;
+}
+
 a,
 a:visited {
   cursor: pointer;
@@ -60,4 +64,5 @@ body {
 
 main {
   flex: 1;
+  display: flex;
 }

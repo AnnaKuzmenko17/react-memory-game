@@ -6,7 +6,6 @@ import {useCards} from './useCards';
 
 export const Cards = () => {
   const {board, flipCard, theme} = useCards();
-
   return (
     <div className={styles.grid}>
       {board.map((item, i) => {
