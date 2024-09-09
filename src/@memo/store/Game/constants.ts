@@ -4,6 +4,6 @@ export const INITIAL_GAME_STATE = {
   board: selectCards(9),
   selectedCards: [],
   isGameOver: false,
-  isGameStarted: true,
+  isGameStarted: false,
   movements: 0,
 };
