@@ -1,7 +1,7 @@
+import {useTheme} from '@memo/services/hooks/useTheme';
 import {Theme} from '@memo/store/Theme/types';
 import classNames from 'classnames';
 import type {FC, ReactNode} from 'react';
-import useStore from 'src/app/store';
 
 import styles from './Button.module.css';
 import {ButtonColor} from './types';
@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const Button: FC<Props> = ({color = ButtonColor.PRIMARY, onClick, children}) => {
-  const {theme} = useStore();
+  const theme = useTheme();
 
   const className = classNames(styles.button, {
     [styles.button_accent]: color === ButtonColor.ACCENT,

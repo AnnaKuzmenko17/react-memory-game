@@ -17,5 +17,4 @@
 .indicator_dark {
   color: var(--red);
   background-color: var(--basic);
-  border: 1px solid var(--red);
 }

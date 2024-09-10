@@ -1,12 +1,13 @@
+import {useIndicators} from '@memo/services/hooks/useIndicators';
+
+import {RestartButton} from '../Header/Controls/RestartButton/RestartButton';
 import {Indicator} from '../Indicator/Indicator';
-import {RestartButton} from '../RestartButton/RestartButton';
 import {Title} from '../Title/Title';
 import {WIN_MESSAGE} from './constants';
-import {useWinModal} from './useWinModal';
 import styles from './WinModal.module.css';
 
 export const WinModal = () => {
-  const {time, movements} = useWinModal();
+  const {time, movements} = useIndicators();
 
   return (
     <div className={styles.win}>
@@ -14,11 +15,11 @@ export const WinModal = () => {
       <div className={styles.indicators}>
         <Indicator
           title="Time:"
-          value={time.toString()}
+          value={time}
         />
         <Indicator
           title="Movements:"
-          value={movements.toString()}
+          value={movements}
         />
       </div>
       <RestartButton />

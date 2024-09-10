@@ -1,3 +1,5 @@
+import '@memo/design/index.css';
+
 import {AppComponent} from './AppComponent';
 import {Root} from './Root';
 

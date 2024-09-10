@@ -9,5 +9,6 @@ interface Props {
 
 export const LevelButton: FC<Props> = ({level}) => {
   const handleStart = useLevelButton(level);
+
   return <Button onClick={handleStart}>{level}</Button>;
 };

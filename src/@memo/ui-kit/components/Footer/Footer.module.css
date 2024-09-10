@@ -6,4 +6,8 @@
   flex-direction: row;
   gap: 30px;
   justify-content: start;
+
+  @media (max-width: 767.98px) {
+    justify-content: center;
+  }
 }

@@ -1,26 +1,27 @@
 .win {
   position: absolute;
-  width: 400px;
-  height: 200px;
-  top: calc(50% - 100px);
-  right: calc(50% - 200px);
+  width: 50vw;
+  height: 50vh;
+  top: 25%;
+  left: 25%;
   border-radius: 30px;
   z-index: 3;
   padding: 10px;
   background-color: var(--basic);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 15px;
 
-  @media (width < 767.98px) {
-    top: calc(50% - 50px);
-    right: calc(50% - 83px);
-  }
-
   h2 {
-    text-decoration: underline;
+    font-size: 20px;
+  }
+  @media (width < 767.98px) {
+    top: 25%;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -34,5 +35,11 @@
 
   > div {
     border: none;
+  }
+
+  @media (width < 767.98px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }

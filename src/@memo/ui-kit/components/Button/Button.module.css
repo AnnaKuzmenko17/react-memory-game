@@ -5,6 +5,7 @@
   width: 133px;
   padding: 4px 24px;
   background-color: var(--light-pink);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -22,7 +23,6 @@
 .darkButton.button_accent:hover {
   color: var(--red);
   background-color: var(--basic);
-  border: 1px solid var(--red);
 }
 
 .darkButton:hover,

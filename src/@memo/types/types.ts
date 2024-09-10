@@ -1,8 +1,6 @@
 export interface DataItem {
   id: number;
   name: string;
-  img: string;
-  dark: string;
   status: CardStatus;
 }
 

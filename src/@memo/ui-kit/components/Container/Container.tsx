@@ -1,11 +1,13 @@
 import type {FC, ReactNode} from 'react';
 
-import styles from './Container.module.css';
+import {useContainer} from './useContainer';
 
 interface Props {
   children: ReactNode;
 }
 
 export const Container: FC<Props> = ({children}) => {
-  return <div className={styles.container}>{children}</div>;
+  const className = useContainer();
+
+  return <div className={className}>{children}</div>;
 };

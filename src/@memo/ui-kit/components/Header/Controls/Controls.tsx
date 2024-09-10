@@ -1,6 +1,6 @@
-import {RestartButton} from '../../RestartButton/RestartButton';
-import {StartButton} from '../../StartButton/StartButton';
 import styles from './Controls.module.css';
+import {RestartButton} from './RestartButton/RestartButton';
+import {StartButton} from './StartButton/StartButton';
 import {useControls} from './useControls';
 
 export const Controls = () => {

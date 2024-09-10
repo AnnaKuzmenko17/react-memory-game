@@ -1,5 +1,6 @@
-import {Button} from '../Button/Button';
-import {ButtonColor} from '../Button/types';
+import {Button} from '@memo/ui-kit/components/Button/Button';
+import {ButtonColor} from '@memo/ui-kit/components/Button/types';
+
 import {useRestartButton} from './useRestartButton';
 
 export const RestartButton = () => {
