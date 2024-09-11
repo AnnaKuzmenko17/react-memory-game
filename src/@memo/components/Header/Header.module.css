@@ -9,7 +9,7 @@
 
   @media (max-width: 767.98px) {
     gap: 5px;
-    height: 80px;
+    min-height: 80px;
     grid-template-columns: 1fr 1fr;
     :nth-child(1) {
       order: 2;

@@ -1,9 +1,8 @@
+import {useTheme} from '@memo/services/hooks/useTheme';
 import {Theme} from '@memo/store/Theme/types';
 import classNames from 'classnames';
 import type {FC} from 'react';
-import useStore from 'src/app/store';
 
-import {Title} from '../Title/Title';
 import styles from './Indicator.module.css';
 
 interface Props {
@@ -12,13 +11,13 @@ interface Props {
 }
 
 export const Indicator: FC<Props> = ({title, value}) => {
-  const {theme} = useStore();
+  const theme = useTheme();
   const className = classNames(styles.indicator, {[styles.indicator_dark]: theme === Theme.DARK});
 
   return (
     <div className={className}>
-      <Title text={title} />
-      <Title text={value} />
+      <h3>{title}</h3>
+      <p>{value}</p>
     </div>
   );
 };

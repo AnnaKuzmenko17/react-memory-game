@@ -14,11 +14,11 @@ export const WinModal = () => {
       <Title text={WIN_MESSAGE} />
       <div className={styles.indicators}>
         <Indicator
-          title="Time:"
+          title="Time: "
           value={time}
         />
         <Indicator
-          title="Movements:"
+          title="Movements: "
           value={movements}
         />
       </div>

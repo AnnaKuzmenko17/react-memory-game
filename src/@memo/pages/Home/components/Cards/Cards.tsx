@@ -1,5 +1,5 @@
+import {CardItem} from '@memo/components/CardItem/CardItem';
 import {getImageUrl} from '@memo/services/helpers/getImageUrl';
-import {CardItem} from '@memo/ui-kit/components/CardItem/CardItem';
 import classNames from 'classnames';
 
 import styles from './Cards.module.css';

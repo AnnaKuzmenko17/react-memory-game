@@ -1,7 +1,7 @@
+import {Container} from '@memo/components/Container/Container';
+import {Footer} from '@memo/components/Footer/Footer';
+import {Header} from '@memo/components/Header/Header';
 import {HomePage} from '@memo/pages/Home/Home';
-import {Container} from '@memo/ui-kit/components/Container/Container';
-import {Footer} from '@memo/ui-kit/components/Footer/Footer';
-import {Header} from '@memo/ui-kit/components/Header/Header';
 import {Route, Routes} from 'react-router-dom';
 
 export const AppComponent = () => {

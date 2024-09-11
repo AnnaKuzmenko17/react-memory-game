@@ -1,5 +1,5 @@
-import {Button} from '@memo/ui-kit/components/Button/Button';
-import {ButtonColor} from '@memo/ui-kit/components/Button/types';
+import {Button} from '@memo/components/Button/Button';
+import {ButtonColor} from '@memo/components/Button/types';
 
 import {useRestartButton} from './useRestartButton';
 
