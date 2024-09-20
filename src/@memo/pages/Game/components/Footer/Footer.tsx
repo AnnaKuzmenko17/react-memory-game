@@ -1,6 +1,6 @@
 import {useIndicators} from '@memo/services/hooks/useIndicators';
 
-import {Indicator} from '../Indicator/Indicator';
+import {Indicator} from '../../../../components/Indicator/Indicator';
 import styles from './Footer.module.css';
 
 export const Footer = () => {

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-import {SwitchButton} from '../SwitchButton/SwitchButton';
+import {SwitchButton} from '../../../../components/SwitchButton/SwitchButton';
 import {Controls} from './Controls/Controls';
 import styles from './Header.module.css';
 import {Logo} from './Logo/Logo';

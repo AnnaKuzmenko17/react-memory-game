@@ -1,6 +1,6 @@
 import useStore from 'src/app/store';
 
-export const useHomePage = () => {
+export const useGamePage = () => {
   const {isGameOver, stopTimer} = useStore();
 
   if (isGameOver) {

@@ -1,8 +1,8 @@
 import {useIndicators} from '@memo/services/hooks/useIndicators';
 
 import {RestartButton} from '../Header/Controls/RestartButton/RestartButton';
-import {Indicator} from '../Indicator/Indicator';
-import {Title} from '../Title/Title';
+import {Indicator} from '../../../../components/Indicator/Indicator';
+import {Title} from '../../../../components/Title/Title';
 import {WIN_MESSAGE} from './constants';
 import styles from './WinModal.module.css';
 
