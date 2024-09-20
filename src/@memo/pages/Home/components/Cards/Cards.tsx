@@ -21,13 +21,17 @@ export const Cards = () => {
         const imgUrl = getImageUrl(theme, item.name);
 
         return (
-          <CardItem
+          <div
+            className={styles.card_container}
             key={id}
-            name={item.name}
-            imgUrl={imgUrl}
-            status={item.status}
-            onFlip={() => flipCard(id)}
-          />
+          >
+            <CardItem
+              name={item.name}
+              imgUrl={imgUrl}
+              status={item.status}
+              onFlip={() => flipCard(id)}
+            />
+          </div>
         );
       })}
     </div>

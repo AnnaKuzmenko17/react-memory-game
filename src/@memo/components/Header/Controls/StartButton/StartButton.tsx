@@ -13,7 +13,7 @@ export const StartButton = () => {
         onClick={toggleModal}
         color={ButtonColor.ACCENT}
       >
-        Start
+        New Game
       </Button>
       {isOpen && (
         <ModalContainer onClickOutside={toggleModal}>

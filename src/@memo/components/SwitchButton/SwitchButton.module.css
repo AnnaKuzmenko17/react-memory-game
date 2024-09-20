@@ -1,8 +1,13 @@
 .switchButton {
-  position: relative;
-  display: inline-block;
   width: 60px;
   height: 34px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+
+  @media (min-width: 767px) {
+    margin: 0;
+  }
 
   span {
     position: absolute;

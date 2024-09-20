@@ -6,6 +6,7 @@ import {useHomePage} from './useHomePage';
 
 export const HomePage = () => {
   const isGameOver = useHomePage();
+  
   return (
     <>
       <Cards />
